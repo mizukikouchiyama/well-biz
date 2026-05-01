@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Well Biz（ウェルビズ）| 法人向けウェルネスサービス</title>
+  <meta name="description" content="Well Bizは、NSCA認定トレーナーがオフィスに伺い、社員のパーソナルストレッチ・マッサージを提供する法人向けウェルネスサービスです。" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css?v=3" />
+</head>
+<body>
+
+  <!-- ================================================
+       HEADER
+  ================================================ -->
+  <header id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#" class="logo-link">
+          <img src="images/logo.png" alt="Well Biz ロゴ" class="logo-img" />
+          <span class="header-site-title"><span class="title-well">Well</span><span class="title-biz"> Biz</span></span>
+        </a>
+
+        <nav class="main-nav" aria-label="メインナビゲーション">
+          <ul class="nav-list">
+            <li><a href="#problem">課題と解決</a></li>
+            <li><a href="#benefits">導入メリット</a></li>
+            <li><a href="#service">サービス内容</a></li>
+            <li><a href="#team">担当者紹介</a></li>
+            <li><a href="#pricing">料金</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contact" class="btn btn-primary nav-cta">
+          <i class="fa-solid fa-envelope"></i>無料相談はこちら
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-overlay" id="navOverlay"></div>
+  <nav class="nav-drawer" id="navDrawer" aria-label="モバイルナビゲーション">
+    <ul>
+      <li><a href="#problem" class="drawer-link">課題と解決</a></li>
+      <li><a href="#benefits" class="drawer-link">導入3つのメリット</a></li>
+      <li><a href="#service" class="drawer-link">サービス内容</a></li>
+      <li><a href="#team" class="drawer-link">担当者紹介</a></li>
+      <li><a href="#pricing" class="drawer-link">料金プラン</a></li>
+      <li><a href="#flow" class="drawer-link">導入の流れ</a></li>
+      <li><a href="#faq" class="drawer-link">よくある質問</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary drawer-cta drawer-link">
+      <i class="fa-solid fa-envelope"></i>無料相談はこちら
+    </a>
+  </nav>
+
+  <!-- ================================================
+       HERO
+  ================================================ -->
+  <section id="hero">
+    <div class="hero-bg-deco" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Left: Text Content -->
+        <div class="hero-content fade-in">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-line"></span>
+            法人向けウェルネスサービス
+          </div>
+
+          <h1 class="hero-catch">
+            オフィスに、<br>
+            <span class="catch-accent">回復の時間を。</span>
+          </h1>
+
+          <p class="hero-sub">
+            社員の肩こり・腰痛は、企業の生産性損失です。<br>
+            Well Bizは、プロのトレーナーがオフィスに伺い、<br>
+            社員のカラダとパフォーマンスを整えます。
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              無料相談はこちら
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#service" class="btn btn-outline btn-lg">
+              サービスを見る
+            </a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="hero-badge">
+              <span class="badge-icon"><i class="fa-solid fa-building"></i></span>
+              オフィス出張対応
+            </div>
+            <div class="hero-badge">
+              <span class="badge-icon"><i class="fa-solid fa-certificate"></i></span>
+              資格保有トレーナー在籍
+            </div>
+            <div class="hero-badge">
+              <span class="badge-icon"><i class="fa-solid fa-sliders"></i></span>
+              内容カスタマイズ可能
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual Card (NO absolute positioning) -->
+        <div class="hero-visual fade-in fade-in--delay">
+          <div class="hv-main-card">
+            <span class="hv-tag">WELL BIZ SERVICE</span>
+            <h2 class="hv-title">プロのトレーナーが<br>オフィスへ伺います</h2>
+            <ul class="hv-feature-list">
+              <li class="hv-feature">
+                <span class="hv-feat-icon"><i class="fa-solid fa-person-walking"></i></span>
+                <span>パーソナルストレッチ</span>
+              </li>
+              <li class="hv-feature">
+                <span class="hv-feat-icon"><i class="fa-solid fa-spa"></i></span>
+                <span>マッサージ（回復ケア）・トレーニング</span>
+              </li>
+              <li class="hv-feature">
+                <span class="hv-feat-icon"><i class="fa-solid fa-location-dot"></i></span>
+                <span>オフィス出張対応</span>
+              </li>
+              <li class="hv-feature">
+                <span class="hv-feat-icon"><i class="fa-solid fa-gears"></i></span>
+                <span>カスタマイズ対応</span>
+              </li>
+            </ul>
+            <div class="hv-cta-line">
+              <i class="fa-solid fa-circle-check"></i>
+              月額定額制でご利用可能
+            </div>
+          </div>
+
+          <div class="hv-stat-row">
+            <div class="hv-stat">
+              <div class="hv-stat-num">2<span class="hv-stat-unit">名</span></div>
+              <div class="hv-stat-label">有資格の専門トレーナーが担当します</div>
+            </div>
+            <div class="hv-stat hv-stat--icon">
+              <i class="fa-solid fa-heart-pulse hv-stat-icon-main"></i>
+              <div class="hv-stat-label">健康経営に<br>直結するサービス</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       PROBLEM
+  ================================================ -->
+  <section id="problem" class="section bg-gray">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Problem</span>
+        <h2 class="section-title">こんな状況、<span class="title-accent">御社でも</span><br>起きていませんか？</h2>
+        <p class="section-lead">
+          デスクワーク中心のオフィスでは、社員の身体的ストレスが日々蓄積されます。
+          その「見えないコスト」が、組織のパフォーマンスを静かに蝕んでいます。
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card fade-in">
+          <div class="problem-icon-wrap">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3>「最近、社員の元気がない」と感じている</h3>
+          <p>長時間のデスクワークによる肩こり・腰痛・眼精疲労は、集中力や意欲の低下を引き起こします。体の不調が、仕事のパフォーマンスに直結しているのです。</p>
+        </div>
+        <div class="problem-card fade-in fade-in--delay-1">
+          <div class="problem-icon-wrap problem-icon-wrap--gold">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <h3>健康経営に取り組みたいが、何から始めるかわからない</h3>
+          <p>健康経営優良法人認定への関心はあるものの、具体的な施策が見つからない。既存の福利厚生との差別化にも悩んでいる担当者様は多くいらっしゃいます。</p>
+        </div>
+        <div class="problem-card fade-in fade-in--delay-2">
+          <div class="problem-icon-wrap">
+            <i class="fa-solid fa-users-gear"></i>
+          </div>
+          <h3>福利厚生の充実で、採用競争力を高めたい</h3>
+          <p>優秀な人材の獲得・定着が課題に。「社員を大切にしている会社」という具体的なアピールポイントが、採用活動において年々重要になっています。</p>
+        </div>
+      </div>
+
+      <div class="problem-alert fade-in">
+        <div class="problem-alert-icon">
+          <i class="fa-solid fa-lightbulb"></i>
+        </div>
+        <p>
+          社員が「体の不調を抱えながら出勤している状態（プレゼンティーズム）」は、<br>
+          企業にとって<strong>見えないパフォーマンス損失</strong>です。Well Bizは、この課題をオフィスで直接解決します。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SOLUTION
+  ================================================ -->
+  <section id="solution" class="section">
+    <div class="container">
+      <div class="solution-inner">
+
+        <div class="solution-text fade-in">
+          <span class="section-label">Solution</span>
+          <h2 class="section-title">Well Bizが、<br><span class="title-accent">オフィスで</span>解決します。</h2>
+          <p class="section-lead">
+            特別な設備も、社員の移動も必要ありません。
+            プロのトレーナーがオフィスに伺い、社員のカラダをリカバリーする時間を職場に届けます。
+          </p>
+
+          <div class="solution-steps">
+            <div class="solution-step">
+              <div class="step-connector" aria-hidden="true"></div>
+              <div class="step-num-wrap">
+                <div class="step-num">1</div>
+              </div>
+              <div class="step-body">
+                <h4><i class="fa-solid fa-user-tie"></i> プロのトレーナーがオフィスへ</h4>
+                <p>NSCA認定パーソナルトレーナー・整体セラピスト資格を持つ専門スタッフが、御社のオフィスに直接伺います。</p>
+              </div>
+            </div>
+            <div class="solution-step">
+              <div class="step-connector" aria-hidden="true"></div>
+              <div class="step-num-wrap">
+                <div class="step-num">2</div>
+              </div>
+              <div class="step-body">
+                <h4><i class="fa-solid fa-building"></i> 空きスペースで施術を実施</h4>
+                <p>会議室や休憩スペースなど、御社の空きスペースを活用。特別な機器の導入は不要です。</p>
+              </div>
+            </div>
+            <div class="solution-step">
+              <div class="step-num-wrap">
+                <div class="step-num step-num--last">3</div>
+              </div>
+              <div class="step-body">
+                <h4><i class="fa-solid fa-arrow-trend-up"></i> 社員がリフレッシュして業務へ戻る</h4>
+                <p>肩こり・腰痛を解消し、集中力を取り戻した社員が、元気に業務へ復帰。企業全体のパフォーマンスが向上します。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solution-visual fade-in fade-in--delay">
+          <div class="solution-card">
+            <div class="solution-card-tag">WHAT WE PROVIDE</div>
+            <h3>Well Bizが届けるもの</h3>
+            <div class="solution-item-list">
+              <div class="solution-item">
+                <div class="solution-item-icon">
+                  <i class="fa-solid fa-person-walking"></i>
+                </div>
+                <div class="solution-item-text">
+                  <strong>パーソナルストレッチ</strong>
+                  デスクワークで固まった筋肉をほぐし、正しい姿勢へ導きます
+                </div>
+              </div>
+              <div class="solution-item">
+                <div class="solution-item-icon">
+                  <i class="fa-solid fa-spa"></i>
+                </div>
+                <div class="solution-item-text">
+                  <strong>マッサージ（回復ケア）</strong>
+                  疲労回復を目的とした、無理のないウェルネスな施術
+                </div>
+              </div>
+              <div class="solution-item">
+                <div class="solution-item-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="solution-item-text">
+                  <strong>オフィス出張対応</strong>
+                  実施スペース・スケジュールは御社と事前相談の上、柔軟に設計
+                </div>
+              </div>
+              <div class="solution-item">
+                <div class="solution-item-icon">
+                  <i class="fa-solid fa-sliders"></i>
+                </div>
+                <div class="solution-item-text">
+                  <strong>カスタマイズ対応</strong>
+                  企業規模・ニーズに合わせた施術内容・対応人数を相談可能
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       BENEFITS
+  ================================================ -->
+  <section id="benefits" class="section bg-gray">
+    <div class="container">
+      <div class="section-header section-header--center fade-in">
+        <span class="section-label">Benefits</span>
+        <h2 class="section-title">導入で得られる、<span class="title-accent">3つのメリット</span></h2>
+        <p class="section-lead">
+          Well Bizの導入は、単なる福利厚生の追加ではありません。
+          企業の生産性・ブランド・採用力に、直接インパクトをもたらします。
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card fade-in">
+          <div class="benefit-num">BENEFIT 01</div>
+          <div class="benefit-icon-wrap">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3>社員の生産性が<br>向上する</h3>
+          <p>肩こり・腰痛の解消により、集中力とパフォーマンスが回復。体のコンディションが整った社員は、より質の高いアウトプットを生み出します。</p>
+        </div>
+        <div class="benefit-card fade-in fade-in--delay-1">
+          <div class="benefit-num">BENEFIT 02</div>
+          <div class="benefit-icon-wrap benefit-icon-wrap--gold">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3>健康経営企業として<br>ブランドが高まる</h3>
+          <p>「社員の健康に投資する企業」という姿勢は、対外的な信頼感と企業イメージの向上に直結します。健康経営優良法人認定への取り組みとしても機能します。</p>
+        </div>
+        <div class="benefit-card fade-in fade-in--delay-2">
+          <div class="benefit-num">BENEFIT 03</div>
+          <div class="benefit-icon-wrap">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h3>採用競争力が<br>強化される</h3>
+          <p>「オフィスでプロのケアが受けられる」という独自の福利厚生は、求職者への強力なアピール材料。優秀な人材の獲得・定着において他社と明確な差別化を実現します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SERVICE
+  ================================================ -->
+  <section id="service" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Service</span>
+        <h2 class="section-title"><span class="title-accent">サービス内容</span>の詳細</h2>
+        <p class="section-lead">
+          Well Bizが提供するのは、「回復」を目的とした、体への負担が少ないウェルネスケアです。
+          無理なく、継続的に。社員のカラダを整える時間をオフィスに。
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <div class="service-card fade-in">
+          <div class="service-card-header">
+            <div class="service-card-icon">
+              <i class="fa-solid fa-person-walking"></i>
+            </div>
+            <div>
+              <h3>パーソナルストレッチ</h3>
+              <p>デスクワーカーに特化したボディケア</p>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags">
+              <span class="service-tag">肩こり改善</span>
+              <span class="service-tag">腰痛予防</span>
+              <span class="service-tag">姿勢矯正</span>
+              <span class="service-tag">柔軟性向上</span>
+            </div>
+            <p class="service-desc">
+              長時間のデスクワークで固まった筋肉を、専門的な知識に基づいてほぐします。姿勢のゆがみを整え、血流を改善。肩・首・腰などデスクワーカーが抱えやすい不調にアプローチします。
+            </p>
+          </div>
+        </div>
+        <div class="service-card fade-in fade-in--delay-1">
+          <div class="service-card-header">
+            <div class="service-card-icon service-card-icon--gold">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <div>
+              <h3>マッサージ（回復ケア）</h3>
+              <p>疲労回復を目的としたウェルネスケア</p>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags">
+              <span class="service-tag">疲労回復</span>
+              <span class="service-tag">リフレッシュ</span>
+              <span class="service-tag">血行促進</span>
+              <span class="service-tag">リラクゼーション</span>
+            </div>
+            <p class="service-desc">
+              「ガッツリ鍛える」のではなく、「回復する」ためのウェルネスな時間。心身のリセットを促すマッサージで、午後の業務への活力を取り戻します。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-note fade-in">
+        <i class="fa-solid fa-circle-info service-note-icon"></i>
+        <div>
+          <strong>実施場所について：</strong>
+          御社のオフィス内の空きスペース（会議室・休憩室など）をご利用いただきます。施術時間・対応人数・スケジュール等は、御社のご状況に合わせて<strong>柔軟にカスタマイズ</strong>いたします。まずはお気軽にご相談ください。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       TEAM
+  ================================================ -->
+  <section id="team" class="section bg-gray">
+    <div class="container">
+      <div class="section-header section-header--center fade-in">
+        <span class="section-label">Team</span>
+        <h2 class="section-title"><span class="title-accent">資格を持つ専門家</span>が担当します</h2>
+        <p class="section-lead">
+          Well Bizのサービスは、国際認定資格を持つトレーナーが提供します。
+          知識と経験に裏づけられた施術で、社員の身体を安全・確実にケアします。
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card fade-in">
+          <div class="team-avatar">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <div class="team-info">
+            <h3>岡本 拓也</h3>
+            <div class="team-role">フィジカルトレーナー担当</div>
+            <ul class="team-certs">
+              <li><i class="fa-solid fa-circle-dot"></i>全米S&amp;C認定パーソナルトレーナー（NSCA-CPT）</li>
+              <li><i class="fa-solid fa-circle-dot"></i>科学的根拠に基づくトレーニング指導のスペシャリスト</li>
+              <li><i class="fa-solid fa-circle-dot"></i>デスクワーカーへの姿勢改善・機能向上サポート</li>
+            </ul>
+          </div>
+        </div>
+        <div class="team-card fade-in fade-in--delay-1">
+          <div class="team-avatar team-avatar--gold">
+            <i class="fa-solid fa-user-tie"></i>
+          </div>
+          <div class="team-info">
+            <h3>安達 健太</h3>
+            <div class="team-role">ボディケア担当</div>
+            <ul class="team-certs">
+              <li><i class="fa-solid fa-circle-dot"></i>筋トレインストラクター</li>
+              <li><i class="fa-solid fa-circle-dot"></i>トレーニングサポーター</li>
+              <li><i class="fa-solid fa-circle-dot"></i>整体セラピスト</li>
+              <li><i class="fa-solid fa-circle-dot"></i>ゆがみ矯正インストラクター</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       PRICING
+  ================================================ -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="section-header section-header--center fade-in">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">シンプルな<span class="title-accent">月額定額制</span></h2>
+        <p class="section-lead">
+          複雑なオプション料金はありません。月額定額で、継続的なウェルネスケアを御社に。
+        </p>
+      </div>
+
+      <div class="pricing-wrap fade-in">
+        <div class="pricing-card">
+          <div class="pricing-card-top">
+            <div class="pricing-plan-badge">MONTHLY PLAN</div>
+            <div class="pricing-amount">
+              <span class="pricing-currency">¥</span>
+              <span class="pricing-num">200,000</span>
+              <span class="pricing-per">/ 月</span>
+            </div>
+            <p class="pricing-tax">税別表記</p>
+            <p class="pricing-caption">実施頻度・時間・対応人数はご要望に合わせてカスタマイズ可能です</p>
+          </div>
+          <div class="pricing-card-body">
+            <ul class="pricing-features">
+              <li class="pricing-feature">
+                <span class="pricing-check"><i class="fa-solid fa-check"></i></span>
+                オフィスへの出張対応
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-check"><i class="fa-solid fa-check"></i></span>
+                有資格トレーナー2名体制
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-check"><i class="fa-solid fa-check"></i></span>
+                パーソナルストレッチ
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-check"><i class="fa-solid fa-check"></i></span>
+                マッサージ（回復ケア）
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-check"><i class="fa-solid fa-check"></i></span>
+                実施スケジュール相談可能
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-check"><i class="fa-solid fa-check"></i></span>
+                内容のカスタマイズ対応
+              </li>
+            </ul>
+            <div class="pricing-cta-area">
+              <p>まずは無料相談で、御社のニーズをお聞かせください。</p>
+              <a href="#contact" class="btn btn-primary">
+                無料相談・お問い合わせ
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FLOW
+  ================================================ -->
+  <section id="flow" class="section bg-gray">
+    <div class="container">
+      <div class="section-header section-header--center fade-in">
+        <span class="section-label">Flow</span>
+        <h2 class="section-title"><span class="title-accent">導入までの流れ</span></h2>
+        <p class="section-lead">
+          お問い合わせから最短でサービス開始まで、わかりやすい4ステップでご案内します。
+        </p>
+      </div>
+
+      <div class="flow-grid">
+        <div class="flow-step fade-in">
+          <div class="flow-step-num">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="flow-step-label">STEP 01</div>
+          <h4>お問い合わせ</h4>
+          <p>フォームまたはお電話でお気軽にご連絡ください。秘密厳守で対応いたします。</p>
+          <div class="flow-arrow" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+        <div class="flow-step fade-in fade-in--delay-1">
+          <div class="flow-step-num">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <div class="flow-step-label">STEP 02</div>
+          <h4>ヒアリング・ご提案</h4>
+          <p>御社の課題・ご要望をお伺いし、最適なサービス内容・実施プランをご提案します。</p>
+          <div class="flow-arrow" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+        <div class="flow-step fade-in fade-in--delay-2">
+          <div class="flow-step-num">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <div class="flow-step-label">STEP 03</div>
+          <h4>日程・場所の調整</h4>
+          <p>実施スケジュールや使用スペースを御社と相談の上、柔軟に設定します。</p>
+          <div class="flow-arrow" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+        <div class="flow-step flow-step--last fade-in fade-in--delay-3">
+          <div class="flow-step-num flow-step-num--gold">
+            <i class="fa-solid fa-flag-checkered"></i>
+          </div>
+          <div class="flow-step-label">STEP 04</div>
+          <h4>サービス開始</h4>
+          <p>準備完了！プロのトレーナーがオフィスへ伺い、社員のウェルネスケアを開始します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FAQ
+  ================================================ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header section-header--center fade-in">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">よくある<span class="title-accent">ご質問</span></h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-q-mark"><i class="fa-solid fa-circle-question"></i></span>
+            <span class="faq-q-text">オフィスに特別な設備や机は必要ですか？</span>
+            <span class="faq-toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              特別な設備は不要です。会議室、休憩室、空き席など、御社にある空きスペースを活用します。実施に必要な道具はすべてトレーナーが持参します。事前に使用スペースについてご相談の上、最適な形でご提案いたします。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-q-mark"><i class="fa-solid fa-circle-question"></i></span>
+            <span class="faq-q-text">月に何回、何人が利用できますか？</span>
+            <span class="faq-toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              実施回数・対応人数は、御社のご要望やオフィスの状況に合わせて事前にご相談の上、設計いたします。まずはお気軽にお問い合わせいただき、詳細をヒアリングさせてください。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-q-mark"><i class="fa-solid fa-circle-question"></i></span>
+            <span class="faq-q-text">健康経営優良法人の認定取得に活用できますか？</span>
+            <span class="faq-toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              Well Bizのサービスは、社員の身体的健康への具体的な取り組みとして、健康経営施策の一環にご活用いただけます。詳細は認定要件とあわせてご確認ください。導入事例や活用方法については、お問い合わせの際にご相談いただけます。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-q-mark"><i class="fa-solid fa-circle-question"></i></span>
+            <span class="faq-q-text">サービス内容はカスタマイズできますか？</span>
+            <span class="faq-toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              はい、可能です。御社の社員構成・業務環境・ご予算に合わせて、施術内容・実施スケジュール・対応人数などを柔軟にご相談いただけます。まずは無料相談にてご要望をお聞かせください。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-q-mark"><i class="fa-solid fa-circle-question"></i></span>
+            <span class="faq-q-text">導入前に試せる機会はありますか？</span>
+            <span class="faq-toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" role="region">
+            <div class="faq-answer-inner">
+              導入前のご相談・体験等については、お問い合わせにてご相談いただけます。まずはお気軽にご連絡ください。御社のニーズに合った形でご提案いたします。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       CONTACT
+  ================================================ -->
+  <section id="contact" class="section-contact">
+    <div class="contact-bg-deco" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header section-header--center section-header--light fade-in">
+        <span class="section-label section-label--light">Contact</span>
+        <h2 class="section-title section-title--light">まずは、<span class="title-accent--gold">無料相談</span>から。</h2>
+        <p class="section-lead section-lead--light">
+          御社の課題・ご要望をお気軽にお聞かせください。<br>
+          担当者よりご連絡いたします。
+        </p>
+      </div>
+
+      <form class="contact-form fade-in" id="contactForm" novalidate>
+        <div class="contact-form-row">
+          <div class="form-group">
+            <label for="company">
+              <i class="fa-solid fa-building"></i> 会社名
+              <span class="required">必須</span>
+            </label>
+            <input type="text" id="company" name="company" placeholder="株式会社〇〇" required />
+          </div>
+          <div class="form-group">
+            <label for="name">
+              <i class="fa-solid fa-user"></i> ご担当者名
+              <span class="required">必須</span>
+            </label>
+            <input type="text" id="name" name="name" placeholder="山田 太郎" required />
+          </div>
+        </div>
+        <div class="contact-form-row">
+          <div class="form-group">
+            <label for="email">
+              <i class="fa-solid fa-envelope"></i> メールアドレス
+              <span class="required">必須</span>
+            </label>
+            <input type="email" id="email" name="email" placeholder="info@example.co.jp" required />
+          </div>
+          <div class="form-group">
+            <label for="tel">
+              <i class="fa-solid fa-phone"></i> 電話番号
+            </label>
+            <input type="tel" id="tel" name="tel" placeholder="03-0000-0000" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inquiry">
+            <i class="fa-solid fa-list-check"></i> お問い合わせ内容
+          </label>
+          <select id="inquiry" name="inquiry">
+            <option value="" disabled selected>選択してください</option>
+            <option value="detail">サービス内容の詳細を知りたい</option>
+            <option value="price">料金・プランについて相談したい</option>
+            <option value="flow">導入の流れを聞きたい</option>
+            <option value="other">まずは話を聞いてみたい</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">
+            <i class="fa-solid fa-message"></i> メッセージ（任意）
+          </label>
+          <textarea id="message" name="message" placeholder="ご質問・ご要望など、お気軽にご記入ください"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-submit">
+          <i class="fa-solid fa-paper-plane"></i>
+          無料相談を申し込む
+        </button>
+        <p class="contact-note">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          連絡先情報は現在準備中です。フォーム送信機能は近日公開予定です。
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo-link">
+            <img src="images/logo.png" alt="Well Biz ロゴ" class="footer-logo-img" />
+          </a>
+          <p class="footer-tagline">Wellness &times; Business</p>
+          <p class="footer-desc">
+            オフィスに、回復の時間を。<br>
+            プロのトレーナーが、社員のカラダと<br>パフォーマンスを整えます。
+          </p>
+        </div>
+
+        <div class="footer-nav-wrap">
+          <div class="footer-nav-group">
+            <h4>サービス</h4>
+            <ul>
+              <li><a href="#problem">課題と解決</a></li>
+              <li><a href="#benefits">導入メリット</a></li>
+              <li><a href="#service">サービス内容</a></li>
+              <li><a href="#pricing">料金プラン</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4>企業情報</h4>
+            <ul>
+              <li><a href="#team">担当者紹介</a></li>
+              <li><a href="#flow">導入の流れ</a></li>
+              <li><a href="#faq">よくある質問</a></li>
+              <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2024 Well Biz. All Rights Reserved.</p>
+        <p class="footer-slogan">オフィスに、回復を。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
