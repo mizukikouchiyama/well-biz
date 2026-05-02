@@ -240,10 +240,10 @@ button {
 }
 
 .header-site-title {
-  font-size: 1.6rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-family: 'Great Vibes', cursive;
   line-height: 1;
   white-space: nowrap;
   padding-top: 2px;
@@ -359,10 +359,12 @@ button {
   z-index: 998;
   opacity: 0;
   transition: opacity 0.3s;
+  pointer-events: none; /* モバイルでタップイベントをブロックしないよう */
 }
 
 .nav-overlay.open {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .nav-drawer {
@@ -1011,7 +1013,7 @@ button {
 ============================================================ */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   margin-bottom: 24px;
 }
@@ -1065,6 +1067,12 @@ button {
 .service-card-header p {
   font-size: 0.82rem;
   opacity: 0.82;
+}
+
+.service-sub-arrow {
+  font-size: 0.85em;
+  opacity: 0.75;
+  margin-right: 2px;
 }
 
 .service-card-body {
