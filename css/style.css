@@ -1357,6 +1357,10 @@ button {
   z-index: 1;
 }
 
+.flow-step-body {
+  /* desktop: no special treatment — label/h4/p stack naturally */
+}
+
 .flow-step-num {
   width: 72px;
   height: 72px;
@@ -1839,6 +1843,11 @@ button {
     flex-shrink: 0;
   }
 
+  .flow-step-body {
+    flex: 1;
+    min-width: 0;
+  }
+
   .team-grid {
     grid-template-columns: 1fr;
     max-width: 560px;
@@ -1910,12 +1919,57 @@ button {
   /* Flow */
   .flow-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 14px;
   }
 
   .flow-step {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px 20px 20px 18px;
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
-    padding: 0;
+    gap: 16px;
+    text-align: left;
+  }
+
+  .flow-step-num {
+    width: 48px;
+    height: 48px;
+    font-size: 1.05rem;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .flow-step-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .flow-step-label {
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+  }
+
+  .flow-step h4 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .flow-step p {
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--text-sub);
+  }
+
+  .flow-arrow {
+    display: none !important;
   }
 
   /* Contact */
