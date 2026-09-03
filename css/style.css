@@ -1704,6 +1704,25 @@ button {
   flex-shrink: 0;
 }
 
+.contact-success {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--white);
+}
+
+.contact-success i {
+  font-size: 3rem;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.contact-success p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,.9);
+}
+
 /* ============================================================
    Footer
 ============================================================ */

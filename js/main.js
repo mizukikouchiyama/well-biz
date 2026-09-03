@@ -118,7 +118,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
-  contactForm.addEventListener('submit', e => {
+  contactForm.addEventListener('submit', async e => {
     e.preventDefault();
 
     const company = contactForm.querySelector('#company').value.trim();
@@ -130,7 +130,31 @@ if (contactForm) {
       return;
     }
 
-    /* Placeholder — replace with actual submission logic */
-    alert('お問い合わせありがとうございます。\n現在、送信機能は準備中です。\n連絡先情報が公開され次第、改めてご連絡いたします。');
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = '送信中…';
+
+    try {
+      const formData = new FormData(contactForm);
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (res.ok) {
+        contactForm.innerHTML = `
+          <div class="contact-success">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>お問い合わせありがとうございます。<br>担当者より2〜3営業日以内にご連絡いたします。</p>
+          </div>`;
+      } else {
+        throw new Error('送信失敗');
+      }
+    } catch {
+      alert('送信中にエラーが発生しました。お手数ですが、時間をおいて再度お試しください。');
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> 無料相談を申し込む';
+    }
   });
 }

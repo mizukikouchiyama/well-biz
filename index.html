@@ -743,7 +743,9 @@
         </p>
       </div>
 
-      <form class="contact-form fade-in" id="contactForm" novalidate>
+      <form class="contact-form fade-in" id="contactForm" name="contact" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden" style="display:none"><label>Bot field: <input name="bot-field" /></label></p>
         <div class="contact-form-row">
           <div class="form-group">
             <label for="company">
@@ -798,8 +800,8 @@
           無料相談を申し込む
         </button>
         <p class="contact-note">
-          <i class="fa-solid fa-triangle-exclamation"></i>
-          連絡先情報は現在準備中です。フォーム送信機能は近日公開予定です。
+          <i class="fa-solid fa-lock"></i>
+          ご入力いただいた情報は、お問い合わせへの返答のみに使用します。
         </p>
       </form>
     </div>
