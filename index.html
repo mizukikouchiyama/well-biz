@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Cormorant+Garamond:ital,wght@1,700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css?v=7" />
+  <link rel="stylesheet" href="css/style.css?v=8" />
 </head>
 <body>
 
@@ -400,86 +400,97 @@
         <span class="section-label">Service</span>
         <h2 class="section-title"><span class="title-accent">サービス内容</span>の詳細</h2>
         <p class="section-lead">
-          Well Bizが提供するのは、「回復」を目的とした、体への負担が少ないウェルネスケアです。
-          無理なく、継続的に。社員のカラダを整える時間をオフィスに。
+          Well Bizは、健康経営の仕組みづくりから社員の身体ケアまでをワンストップで提供します。
         </p>
       </div>
 
       <div class="service-grid">
+
+        <!-- Plan 1 -->
         <div class="service-card fade-in">
           <div class="service-card-header">
             <div class="service-card-icon">
-              <i class="fa-solid fa-dumbbell"></i>
+              <i class="fa-solid fa-shield-heart"></i>
             </div>
             <div>
-              <h3>パーソナルトレーニング</h3>
-              <p><span class="service-sub-arrow">↳</span> 身体の根本改善</p>
+              <h3>健康経営サポートプラン</h3>
+              <p><span class="service-sub-arrow">↳</span> 社員のヘルスリテラシー向上</p>
             </div>
           </div>
           <div class="service-card-body">
             <div class="service-tags">
-              <span class="service-tag">筋力強化</span>
-              <span class="service-tag">姿勢改善</span>
-              <span class="service-tag">体幹強化</span>
-              <span class="service-tag">根本改善</span>
+              <span class="service-tag service-tag--required">必須</span>
             </div>
-            <p class="service-desc">
-              身体の根本から改善するパーソナルトレーニング。個人の状態に合わせたプログラムで、デスクワークが原因の不調を内側から解消します。
-            </p>
+            <ul class="service-plan-list">
+              <li>
+                <span class="service-plan-icon"><i class="fa-solid fa-trophy"></i></span>
+                <span><strong>健康チャレンジ</strong><br>日々の運動を楽しく習慣化</span>
+              </li>
+              <li>
+                <span class="service-plan-icon"><i class="fa-solid fa-chart-bar"></i></span>
+                <span><strong>Well Biz Score</strong><br>独自の指標で社員の健康意識・健康状態を可視化</span>
+              </li>
+              <li>
+                <span class="service-plan-icon"><i class="fa-solid fa-people-group"></i></span>
+                <span><strong>健康経営戦略MTG</strong><br>Well Biz Scoreの分析結果をもとに、御社の課題に合わせた健康施策を毎月オンラインでご提案</span>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="service-card fade-in fade-in--delay-1">
-          <div class="service-card-header">
-            <div class="service-card-icon">
-              <i class="fa-solid fa-person-walking"></i>
-            </div>
-            <div>
-              <h3>パーソナルストレッチ</h3>
-              <p>デスクワーカーに特化したボディケア</p>
-            </div>
-          </div>
-          <div class="service-card-body">
-            <div class="service-tags">
-              <span class="service-tag">肩こり改善</span>
-              <span class="service-tag">腰痛予防</span>
-              <span class="service-tag">姿勢矯正</span>
-              <span class="service-tag">柔軟性向上</span>
-            </div>
-            <p class="service-desc">
-              長時間のデスクワークで固まった筋肉を、専門的な知識に基づいてほぐします。姿勢のゆがみを整え、血流を改善。肩・首・腰などデスクワーカーが抱えやすい不調にアプローチします。
-            </p>
-          </div>
-        </div>
+
+        <!-- Plan 2 -->
         <div class="service-card fade-in fade-in--delay-1">
           <div class="service-card-header">
             <div class="service-card-icon service-card-icon--gold">
-              <i class="fa-solid fa-hand-holding-heart"></i>
+              <i class="fa-solid fa-person-running"></i>
             </div>
             <div>
-              <h3>マッサージ（回復ケア）</h3>
-              <p>疲労回復を目的としたウェルネスケア</p>
+              <h3>健康実践プラン</h3>
+              <p><span class="service-sub-arrow">↳</span> 社員の体を整える</p>
             </div>
           </div>
           <div class="service-card-body">
             <div class="service-tags">
-              <span class="service-tag">疲労回復</span>
-              <span class="service-tag">リフレッシュ</span>
-              <span class="service-tag">血行促進</span>
-              <span class="service-tag">リラクゼーション</span>
+              <span class="service-tag service-tag--optional">任意</span>
+            </div>
+            <ul class="service-plan-list">
+              <li>
+                <span class="service-plan-icon"><i class="fa-solid fa-dumbbell"></i></span>
+                <span><strong>パーソナルトレーニング</strong></span>
+              </li>
+              <li>
+                <span class="service-plan-icon"><i class="fa-solid fa-person-walking"></i></span>
+                <span><strong>パーソナルストレッチ</strong></span>
+              </li>
+              <li>
+                <span class="service-plan-icon"><i class="fa-solid fa-spa"></i></span>
+                <span><strong>整体</strong></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="service-card fade-in fade-in--delay-2">
+          <div class="service-card-header">
+            <div class="service-card-icon">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div>
+              <h3>健康経営優良法人取得サポート</h3>
+              <p><span class="service-sub-arrow">↳</span> めんどうなことを丸投げ</p>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags">
+              <span class="service-tag service-tag--optional">任意</span>
             </div>
             <p class="service-desc">
-              「ガッツリ鍛える」のではなく、「回復する」ためのウェルネスな時間。心身のリセットを促すマッサージで、午後の業務への活力を取り戻します。
+              必要な取り組みの整理から申請までをサポート。健康経営優良法人の認定取得に向けた手続きを、ワンストップでお手伝いします。
             </p>
           </div>
         </div>
-      </div>
 
-      <div class="service-note fade-in">
-        <i class="fa-solid fa-circle-info service-note-icon"></i>
-        <div>
-          <strong>実施場所について：</strong>
-          御社のオフィス内の空きスペース（会議室・休憩室など）をご利用いただきます。施術時間・対応人数・スケジュール等は、御社のご状況に合わせて<strong>柔軟にカスタマイズ</strong>いたします。まずはお気軽にご相談ください。
-        </div>
       </div>
     </div>
   </section>
