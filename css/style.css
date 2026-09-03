@@ -1016,9 +1016,11 @@ button {
 ============================================================ */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr;
   gap: 24px;
   margin-bottom: 24px;
+  max-width: 640px;
+  margin-inline: auto;
 }
 
 .service-card {
