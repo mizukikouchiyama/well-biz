@@ -663,6 +663,11 @@ button {
   gap: 12px;
 }
 
+.hv-stat-row--single {
+  grid-template-columns: 1fr;
+  max-width: 200px;
+}
+
 .hv-stat {
   background: var(--white);
   border-radius: var(--radius);
